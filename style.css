@@ -52,3 +52,58 @@ header {
   
     z-index: 10;
   }
+
+  #offers {
+
+    background: url("./img/offer-background.jpg") center center/cover fixed ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+  #offers .title{
+    
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  #offers h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #e4b95b;
+  }
+  #offers .title p {
+    color: #ffffff;
+  }
+  #offers .offers-items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    color: #fff;
+  }
+  #offers .offers-items img {
+    
+  
+    height: 250px;
+    border-radius: 50%;
+    width: 350px;
+  }
+  #offers .offers-items h3 {
+    font-size: 25px; 
+    color: #fff;
+    margin: 15px ;
+  }
+  #offers .offers-items p {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  #offers .offers-items span {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 5px;
+  }
