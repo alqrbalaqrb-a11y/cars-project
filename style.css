@@ -89,21 +89,21 @@ header {
     height: 250px;
     border-radius: 50%;
     width: 350px;
-  }
-  #offers .offers-items h3 {
-    font-size: 25px; 
-    color: #fff;
-    margin: 15px ;
-  }
-  #offers .offers-items p {
-    color: #fff;
-    font-size: 14px;
-    padding: 0 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
-  }
-  #offers .offers-items span {
-    font-weight: 600;
-    font-size: 18px;
-    margin-left: 5px;
-  }
+}
+#offers .offers-items h3 {
+  font-size: 25px; 
+  color: #fff;
+  margin: 15px ;
+}
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
