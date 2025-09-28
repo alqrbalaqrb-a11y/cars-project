@@ -9,48 +9,38 @@
 <body>
    
     <section id="contact">
-        
         <div class="container">
-        
-          
-            <form action="index.html">
-                
-                        <!-- <form> -->
-                            
-                <label for="nume">user name:</label>
-              <input type="text" id="name" required placeholder="أدخل الاسم">
-              
-              
-           
-          
-            
-              <label for="pasw">password:</label>
-              <input type="password" id="pasw" required placeholder="كلمه المرور">
-            
-              <label for="mail">email:</label>
-            <input type="email" n id="mail" required placeholder="ادخل البريد الالكتروني" >
-              
-              
-            
-            
-            
-            <a href="index.html"><input type="submit" value=" login" id="send"></a>
-        </form>
-            
-            
-           
-           
-          
-      
-          
-      
-            </div>
-           
-       
-        
+            <form onsubmit="loginUser(event)">
+                <label for="name">user name:</label>
+                <input type="text" id="name" required placeholder="أدخل الاسم">
+
+                <label for="pasw">password:</label>
+                <input type="password" id="pasw" required placeholder="كلمه المرور">
+
+                <label for="mail">email:</label>
+                <input type="email" id="mail" required placeholder="ادخل البريد الالكتروني">
+
+                <input type="submit" value="login" id="send">
+            </form>
+        </div>
     </section>
-      
-          <script type="text/javascript" src="js/login.js" ></script>  
+
+    <script>
+        function loginUser(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
+
+            // جلب البيانات
+            let username = document.getElementById("name").value;
+            let email = document.getElementById("mail").value;
+
+            // حفظ البيانات مؤقتاً في localStorage
+            localStorage.setItem("username", username);
+            localStorage.setItem("email", email);
+
+            // الانتقال للصفحة الثانية
+            window.location.href = "r.html";
+        }
+    </script>
     
 </body>
 </html>
