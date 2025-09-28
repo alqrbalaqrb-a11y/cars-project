@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة معلومات الحجز</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>أهلاً وسهلاً</h1>
+            <p><span id="user"></span><strong>:اسم المستخدم</strong> </p>
+            <p> <span id="mail"></span><strong>:البريد الإلكتروني</strong></p>
+        </div>
+    </section>
+
+    <script>
+        // جلب البيانات من localStorage
+        document.getElementById("user").innerText = localStorage.getItem("username");
+        document.getElementById("mail").innerText = localStorage.getItem("email");
+    </script>
+    
+</body>
+</html>
